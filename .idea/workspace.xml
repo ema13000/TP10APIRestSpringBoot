@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="92b522d3-bddf-447e-8a9e-5f09353c5a2d" name="Changes" comment="beans" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/TP">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="TP" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ema13000&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ema13000/Mateo_Emanuel_TP_SpringBoot.git&quot;,
+    &quot;accountId&quot;: &quot;f47e41e2-7111-4339-8e1d-07d2096bb171&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0158431168717192" />
+      <entry key="MS500" value="1.4364837955668814" />
+      <entry key="S2" value="1.81281560198432" />
+      <entry key="S5" value="1.9204428161869478" />
+      <entry key="S10" value="1.9593972292882773" />
+      <entry key="S30" value="2.001985518005397" />
+      <entry key="S60" value="2.299061414146124" />
+      <entry key="M2" value="3.4085916268441623" />
+      <entry key="M5" value="6.714623109652057" />
+      <entry key="M10" value="10.56953068955228" />
+      <entry key="M15" value="12.897872069249477" />
+      <entry key="M30" value="16.722838234610002" />
+      <entry key="H1" value="20.25717971300783" />
+      <entry key="H2" value="23.021801243561555" />
+      <entry key="H4" value="24.820794598166724" />
+      <entry key="D1" value="26.606281490096688" />
+      <entry key="W1" value="26.942946506714716" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.6444770637052975E-129" />
+      <entry key="S5" value="4.055235743565833E-52" />
+      <entry key="S10" value="3.1280458319888956E-26" />
+      <entry key="S30" value="7.130211152909661E-9" />
+      <entry key="S60" value="1.7689086260030184E-4" />
+      <entry key="M2" value="0.029163365042844384" />
+      <entry key="M5" value="0.635516684645336" />
+      <entry key="M10" value="1.7810393071992752" />
+      <entry key="M15" value="2.512012041914521" />
+      <entry key="M30" value="3.5436738088736597" />
+      <entry key="H1" value="4.209216993017978" />
+      <entry key="H2" value="4.58757330994294" />
+      <entry key="H4" value="4.789341993508254" />
+      <entry key="D1" value="4.964256579668322" />
+      <entry key="W1" value="4.994878057654136" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.001749774734563" />
+      <entry key="MS500" value="1.4319035313970803" />
+      <entry key="S2" value="1.8112780328929734" />
+      <entry key="S5" value="1.9197828739319494" />
+      <entry key="S10" value="1.9590591209673915" />
+      <entry key="S30" value="2.001435121505542" />
+      <entry key="S60" value="2.294719745890789" />
+      <entry key="M2" value="3.4264547574168764" />
+      <entry key="M5" value="7.329431684652824" />
+      <entry key="M10" value="12.328585088081807" />
+      <entry key="M15" value="15.390461504719413" />
+      <entry key="M30" value="20.253318091350412" />
+      <entry key="H1" value="24.458535930466297" />
+      <entry key="H2" value="27.605033962683635" />
+      <entry key="H4" value="29.60784589766913" />
+      <entry key="D1" value="31.570137610156273" />
+      <entry key="W1" value="31.937766869205802" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KCZdfe4jLXu2U0txclCg6ZlPru" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build TP.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.TpApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/.ema/.utn/3'2/Desarrollo de software/Practica/9.Fundamentos Spring Boot/Mateo_Emanuel_TP_SpringBoot",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Mateo_Emanuel_TP_SpringBoot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Mateo_Emanuel_TP_SpringBoot" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92b522d3-bddf-447e-8a9e-5f09353c5a2d" name="Changes" comment="" />
+      <created>1791063598509</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1791063598509</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gradle" />
+    <MESSAGE value="service" />
+    <MESSAGE value="beans" />
+    <option name="LAST_COMMIT_MESSAGE" value="beans" />
+  </component>
+</project>
