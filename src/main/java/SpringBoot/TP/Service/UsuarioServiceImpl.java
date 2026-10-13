@@ -28,9 +28,11 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public UsuarioDTO findById(Long id) {
-        Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new NullPointerException("No se encontro al usuario"));
+        Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("No se encontro al usuario"));
         if (usuario.getEliminado() == false){
-            return UsuarioDTO.toDTO(usuario);
+            UsuarioDTO usuarioDTO = UsuarioDTO.toDTO(usuario);
+            System.out.println(usuarioDTO);
+            return usuarioDTO;
     }
         return null;
     }
@@ -60,5 +62,15 @@ public class UsuarioServiceImpl implements UsuarioService {
         Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("No se encontro al usuario" + id));
         usuario.setEliminado(true);
         usuarioRepository.save(usuario);
+    }
+
+    @Override
+    public UsuarioDTO findByMail(String mail) {
+        Usuario usuario = usuarioRepository.findByMail(mail);
+        if (usuario == null || !Boolean.FALSE.equals(usuario.getEliminado())) {throw new RecursoNoEncontradoException("No se encontró un usuario con mail " + mail);
+        }
+        UsuarioDTO usuarioDTO = UsuarioDTO.toDTO(usuario);
+        System.out.println(usuarioDTO);
+        return usuarioDTO;
     }
 }

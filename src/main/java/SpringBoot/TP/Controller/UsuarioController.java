@@ -33,14 +33,19 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.findAll());
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<UsuarioDTO> update(@RequestBody UsuarioEdit usuarioEdit, @PathVariable("id") Long id){
         return ResponseEntity.ok(usuarioService.update(usuarioEdit, id));
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<UsuarioDTO> delete(@PathVariable("id") Long id){
         usuarioService.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/email")
+    public ResponseEntity<UsuarioDTO> findByEmail(@RequestParam("email") String email){
+        return ResponseEntity.ok(usuarioService.find)
     }
 }
