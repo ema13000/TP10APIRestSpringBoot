@@ -1,37 +1,26 @@
 package SpringBoot.TP.DTO.pedido;
 
-import SpringBoot.TP.Entity.DetallePedido;
 import SpringBoot.TP.Entity.Pedido;
 import SpringBoot.TP.Enum.Estado;
 import SpringBoot.TP.Enum.FormaPago;
 
-import java.time.LocalDateTime;
-import java.util.Set;
+import java.time.LocalDate;
 
 public record PedidoEdit(
-        LocalDateTime fecha,
+        LocalDate fecha,
         Estado estado,
-        Double total,
-        FormaPago formaPago,
-        Set<DetallePedido> detallePedido
-        ) {
+        FormaPago formaPago
+) {
     public void applyTo(Pedido pedido) {
-        if (pedido.getFecha() != null) {
-            pedido.setFecha(pedido.getFecha());
+        if (this.fecha != null) {
+            pedido.setFecha(this.fecha);
         }
-        if (pedido.getEstado() != null) {
-            pedido.setEstado(estado);
+        if (this.estado != null) {
+            pedido.setEstado(this.estado);
         }
-        if (pedido.getTotal() != null) {
-            pedido.setTotal(pedido.getTotal());
-        }
-        if (pedido.getFormapago() != null) {
-            pedido.setFormapago(pedido.getFormapago());
-        }
-        if (detallePedido != null) {
-            for (DetallePedido detalle: detallePedido) {
-                pedido.addDetallePedido(detalle.getCantidad(), detalle.getProducto());
-            }
+        if (this.formaPago != null) {
+            pedido.setFormapago(this.formaPago);
         }
     }
 }
+

@@ -13,20 +13,20 @@ public record UsuarioEdit(
         Set<Pedido> pedidos
 ) {
     public void applyTo(Usuario usuario) {
-        if (usuario.getNombre() != null) {
-            usuario.setNombre(nombre);
+        if (this.nombre != null) {
+            usuario.setNombre(this.nombre);
         }
-        if (usuario.getApellido() != null) {
-            usuario.setApellido(apellido);
+        if (this.apellido != null) {
+            usuario.setApellido(this.apellido);
         }
-        if (usuario.getMail() != null) {
-            usuario.setMail(mail);
+        if (this.mail != null) {
+            usuario.setMail(this.mail);
         }
-        if (usuario.getCelular() != null) {
-            usuario.setCelular(celular);
+        if (this.celular != null) {
+            usuario.setCelular(this.celular);
         }
-        if (pedidos != null) {
-            for (Pedido pedido : pedidos) {
+        if (this.pedidos != null) {
+            for (Pedido pedido : this.pedidos) {
                 usuario.addPedido(pedido);
             }
         }
