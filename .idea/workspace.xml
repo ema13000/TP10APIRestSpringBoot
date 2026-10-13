@@ -4,157 +4,131 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92b522d3-bddf-447e-8a9e-5f09353c5a2d" name="Changes" comment="beans" />
+    <list default="true" id="acb1ed04-74e0-43ac-b409-719bfc4563f7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/TP">
+    <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="TP" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;ema13000&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ema13000/Mateo_Emanuel_TP_SpringBoot.git&quot;,
-    &quot;accountId&quot;: &quot;f47e41e2-7111-4339-8e1d-07d2096bb171&quot;
-  }
-}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0158431168717192" />
-      <entry key="MS500" value="1.4364837955668814" />
-      <entry key="S2" value="1.81281560198432" />
-      <entry key="S5" value="1.9204428161869478" />
-      <entry key="S10" value="1.9593972292882773" />
-      <entry key="S30" value="2.001985518005397" />
-      <entry key="S60" value="2.299061414146124" />
-      <entry key="M2" value="3.4085916268441623" />
-      <entry key="M5" value="6.714623109652057" />
-      <entry key="M10" value="10.56953068955228" />
-      <entry key="M15" value="12.897872069249477" />
-      <entry key="M30" value="16.722838234610002" />
-      <entry key="H1" value="20.25717971300783" />
-      <entry key="H2" value="23.021801243561555" />
-      <entry key="H4" value="24.820794598166724" />
-      <entry key="D1" value="26.606281490096688" />
-      <entry key="W1" value="26.942946506714716" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.1653404088517535E-73" />
+      <entry key="S2" value="6.07329128844653E-19" />
+      <entry key="S5" value="7.942187265104344E-8" />
+      <entry key="S10" value="5.834007110194929E-4" />
+      <entry key="S30" value="0.3096011490484946" />
+      <entry key="S60" value="1.816808918092465" />
+      <entry key="M2" value="5.005671897421182" />
+      <entry key="M5" value="12.135628683836556" />
+      <entry key="M10" value="28.879856225213825" />
+      <entry key="M15" value="51.56674475870496" />
+      <entry key="M30" value="121.31055329492335" />
+      <entry key="H1" value="227.09560988847045" />
+      <entry key="H2" value="362.3896783481863" />
+      <entry key="H4" value="510.60300360397684" />
+      <entry key="D1" value="753.9177700336886" />
+      <entry key="W1" value="815.876145426904" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.6444770637052975E-129" />
-      <entry key="S5" value="4.055235743565833E-52" />
-      <entry key="S10" value="3.1280458319888956E-26" />
-      <entry key="S30" value="7.130211152909661E-9" />
-      <entry key="S60" value="1.7689086260030184E-4" />
-      <entry key="M2" value="0.029163365042844384" />
-      <entry key="M5" value="0.635516684645336" />
-      <entry key="M10" value="1.7810393071992752" />
-      <entry key="M15" value="2.512012041914521" />
-      <entry key="M30" value="3.5436738088736597" />
-      <entry key="H1" value="4.209216993017978" />
-      <entry key="H2" value="4.58757330994294" />
-      <entry key="H4" value="4.789341993508254" />
-      <entry key="D1" value="4.964256579668322" />
-      <entry key="W1" value="4.994878057654136" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000000003553" />
+      <entry key="S10" value="1.0000006771216312" />
+      <entry key="S30" value="1.017679481374419" />
+      <entry key="S60" value="1.2729040967674705" />
+      <entry key="M2" value="2.148833696577359" />
+      <entry key="M5" value="4.4917919702681175" />
+      <entry key="M10" value="9.358102442418375" />
+      <entry key="M15" value="15.16617386132056" />
+      <entry key="M30" value="32.62257636676461" />
+      <entry key="H1" value="62.74337448292695" />
+      <entry key="H2" value="107.54851608307757" />
+      <entry key="H4" value="159.86728495727425" />
+      <entry key="D1" value="246.9059204123515" />
+      <entry key="W1" value="269.0315645235348" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.001749774734563" />
-      <entry key="MS500" value="1.4319035313970803" />
-      <entry key="S2" value="1.8112780328929734" />
-      <entry key="S5" value="1.9197828739319494" />
-      <entry key="S10" value="1.9590591209673915" />
-      <entry key="S30" value="2.001435121505542" />
-      <entry key="S60" value="2.294719745890789" />
-      <entry key="M2" value="3.4264547574168764" />
-      <entry key="M5" value="7.329431684652824" />
-      <entry key="M10" value="12.328585088081807" />
-      <entry key="M15" value="15.390461504719413" />
-      <entry key="M30" value="20.253318091350412" />
-      <entry key="H1" value="24.458535930466297" />
-      <entry key="H2" value="27.605033962683635" />
-      <entry key="H4" value="29.60784589766913" />
-      <entry key="D1" value="31.570137610156273" />
-      <entry key="W1" value="31.937766869205802" />
+      <entry key="MS100" value="0.008431470597690834" />
+      <entry key="MS500" value="0.3847518050402156" />
+      <entry key="S2" value="0.7875808840098231" />
+      <entry key="S5" value="0.9089041768196833" />
+      <entry key="S10" value="0.9539046580516438" />
+      <entry key="S30" value="1.3026794298636473" />
+      <entry key="S60" value="3.0505985111020526" />
+      <entry key="M2" value="7.101531637779815" />
+      <entry key="M5" value="16.57634713027768" />
+      <entry key="M10" value="38.17891529309582" />
+      <entry key="M15" value="66.66325540083758" />
+      <entry key="M30" value="153.85193387441794" />
+      <entry key="H1" value="289.7628632725465" />
+      <entry key="H2" value="469.8772170254191" />
+      <entry key="H4" value="670.4274180661553" />
+      <entry key="D1" value="1000.8132328378709" />
+      <entry key="W1" value="1084.9060971342285" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8,
+  &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3KCZdfe4jLXu2U0txclCg6ZlPru" />
+  <component name="ProjectId" id="3KCbVU8hvQ7f9N443Z3Ettdd3JJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Gradle.Build TP.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.TpApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/.ema/.utn/3'2/Desarrollo de software/Practica/9.Fundamentos Spring Boot/Mateo_Emanuel_TP_SpringBoot",
+    "last_opened_file_path": "D:/.ema/.utn/3'2/Desarrollo de software/Practica/10.APIs REST Spring Boot/Mateo_Emanuel_TP_APIRest",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
+    "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="Mateo_Emanuel_TP_SpringBoot" />
+      <module name="TP" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Mateo_Emanuel_TP_SpringBoot" />
+      <module name="TP" />
       <option name="filePath" />
       <method v="2" />
     </configuration>
@@ -169,21 +143,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="92b522d3-bddf-447e-8a9e-5f09353c5a2d" name="Changes" comment="" />
-      <created>1791063598509</created>
+      <changelist id="acb1ed04-74e0-43ac-b409-719bfc4563f7" name="Changes" comment="" />
+      <created>1791064520175</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1791063598509</updated>
+      <updated>1791064520175</updated>
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="gradle" />
-    <MESSAGE value="service" />
-    <MESSAGE value="beans" />
-    <option name="LAST_COMMIT_MESSAGE" value="beans" />
   </component>
 </project>
