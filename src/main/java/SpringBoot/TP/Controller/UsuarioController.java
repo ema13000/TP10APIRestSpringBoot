@@ -33,7 +33,7 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.findAll());
     }
 
-    @PutMapping
+    @PutMapping("{id}")
     public ResponseEntity<UsuarioDTO> update(@RequestBody UsuarioEdit usuarioEdit, @PathVariable Long id){
         return ResponseEntity.ok(usuarioService.update(usuarioEdit, id));
     }

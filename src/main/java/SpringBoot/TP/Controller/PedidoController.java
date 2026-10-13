@@ -34,7 +34,7 @@ public class PedidoController {
         return ResponseEntity.ok(pedidoService.findAll());
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<PedidoDTO> update(@RequestBody PedidoEdit pedidoEdit, @PathVariable Long id){
         return ResponseEntity.ok(pedidoService.update(pedidoEdit, id));
     }
