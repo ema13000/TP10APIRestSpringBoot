@@ -3,6 +3,7 @@ package SpringBoot.TP.Service;
 import SpringBoot.TP.DTO.detallePedido.DetallePedidoCreate;
 import SpringBoot.TP.DTO.detallePedido.DetallePedidoDTO;
 import SpringBoot.TP.Entity.DetallePedido;
+import SpringBoot.TP.Exception.RecursoNoEncontradoException;
 import SpringBoot.TP.Repository.DetallePedidoRepository;
 import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,7 @@ public class DetallePedidoServiceImpl implements DetallePedidoService {
 
     @Override
     public DetallePedidoDTO findById(Long id) {
-        DetallePedido detallePedido = detallePedidoRepository.findById(id).orElseThrow(() -> new NullPointerException("DetallePedido no encontrada"));
+        DetallePedido detallePedido = detallePedidoRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("DetallePedido no encontrada" + id));
         if (detallePedido.getEliminado() == false) {
             return DetallePedidoDTO.toDTO(detallePedido);
         }
@@ -48,7 +49,7 @@ public class DetallePedidoServiceImpl implements DetallePedidoService {
 
     @Override
     public void deleteById(Long id) {
-        DetallePedido detallePedido = detallePedidoRepository.findById(id).orElseThrow(() -> new NullPointerException("DetallePedido no encontrada"));
+        DetallePedido detallePedido = detallePedidoRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("DetallePedido no encontrada" + id));
         detallePedido.setEliminado(true);
         detallePedidoRepository.save(detallePedido);
     }

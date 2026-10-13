@@ -4,6 +4,7 @@ import SpringBoot.TP.DTO.usuario.UsuarioCreate;
 import SpringBoot.TP.DTO.usuario.UsuarioDTO;
 import SpringBoot.TP.DTO.usuario.UsuarioEdit;
 import SpringBoot.TP.Entity.Usuario;
+import SpringBoot.TP.Exception.RecursoNoEncontradoException;
 import SpringBoot.TP.Repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
@@ -48,7 +49,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public UsuarioDTO update(UsuarioEdit usuarioEdit, Long idUsuario) {
-        Usuario usuario = usuarioRepository.findById(idUsuario).orElseThrow(() -> new NullPointerException("No se encontro al usuario"));
+        Usuario usuario = usuarioRepository.findById(idUsuario).orElseThrow(() -> new RecursoNoEncontradoException("No se encontro al usuario" + idUsuario));
         usuarioEdit.applyTo(usuario);
         usuario = usuarioRepository.save(usuario);
         return UsuarioDTO.toDTO(usuario);
@@ -56,7 +57,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public void delete(Long id) {
-        Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new NullPointerException("No se encontro al usuario"));
+        Usuario usuario = usuarioRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("No se encontro al usuario" + id));
         usuario.setEliminado(true);
         usuarioRepository.save(usuario);
     }

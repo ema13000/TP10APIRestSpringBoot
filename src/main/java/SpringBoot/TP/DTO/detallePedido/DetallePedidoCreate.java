@@ -4,6 +4,7 @@ import SpringBoot.TP.Entity.DetallePedido;
 import SpringBoot.TP.Entity.Pedido;
 
 public record DetallePedidoCreate(
+        Long idProducto,
         int cantidad,
         Double subtotal
 ) {

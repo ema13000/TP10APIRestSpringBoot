@@ -4,6 +4,7 @@ import SpringBoot.TP.DTO.categoria.CategoriaCreate;
 import SpringBoot.TP.DTO.categoria.CategoriaDTO;
 import SpringBoot.TP.DTO.categoria.CategoriaEdit;
 import SpringBoot.TP.Entity.Categoria;
+import SpringBoot.TP.Exception.RecursoNoEncontradoException;
 import SpringBoot.TP.Repository.CategoriaRepository;
 import org.springframework.stereotype.Service;
 
@@ -27,7 +28,7 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public CategoriaDTO findById(Long id) {
-        Categoria categoria = categoriaRepository.findById(id).orElseThrow(() -> new NullPointerException("Categoria no encontrada"));
+        Categoria categoria = categoriaRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("Categoria no encontrada" + id));
         if (categoria.getEliminado() == false) {
             return CategoriaDTO.toDTO(categoria);
         }
@@ -48,7 +49,7 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public CategoriaDTO update(CategoriaEdit categoriaEdit, Long idCategoria) {
-        Categoria categoria = categoriaRepository.findById(idCategoria).orElseThrow(() -> new NullPointerException("Categoria no encontrada"));
+        Categoria categoria = categoriaRepository.findById(idCategoria).orElseThrow(() -> new RecursoNoEncontradoException("Categoria no encontrada" + idCategoria));
         categoriaEdit.applyTo(categoria);
         categoria = categoriaRepository.save(categoria);
         return CategoriaDTO.toDTO(categoria);
@@ -56,7 +57,7 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public void deleteById(Long id) {
-        Categoria categoria = categoriaRepository.findById(id).orElseThrow(() -> new NullPointerException("Categoria no encontrada"));
+        Categoria categoria = categoriaRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("Categoria no encontrada"+ id));
         categoria.setEliminado(true);
         categoriaRepository.save(categoria);
     }
