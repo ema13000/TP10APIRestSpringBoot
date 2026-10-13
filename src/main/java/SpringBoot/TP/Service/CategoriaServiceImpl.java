@@ -40,7 +40,7 @@ public class CategoriaServiceImpl implements CategoriaService {
         List<Categoria> categorias = categoriaRepository.findAll();
         List<Categoria> resultado = new ArrayList<>();
     for(Categoria categoria : categorias) {
-        if (categoria.getEliminado() == true) {
+        if (categoria.getEliminado() == false) {
             resultado.add(categoria);
         }
     }

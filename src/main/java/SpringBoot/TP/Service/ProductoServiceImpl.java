@@ -46,8 +46,8 @@ public class ProductoServiceImpl implements ProductoService {
         List<Producto> productos = productoRepository.findAll();
         List<Producto> resultado = new ArrayList<>();
         for (Producto producto : productos) {
-            if (producto.getEliminado() == true) {
-                productos.add(producto);
+            if (producto.getEliminado() == false) {
+                resultado.add(producto);
             }
         }
         return resultado.stream().map(ProductoDTO :: toDTO).toList();

@@ -3,7 +3,12 @@ package SpringBoot.TP.Controller;
 import SpringBoot.TP.DTO.categoria.CategoriaCreate;
 import SpringBoot.TP.DTO.categoria.CategoriaDTO;
 import SpringBoot.TP.DTO.categoria.CategoriaEdit;
+import SpringBoot.TP.DTO.producto.ProductoCreate;
+import SpringBoot.TP.DTO.producto.ProductoDTO;
+import SpringBoot.TP.DTO.producto.ProductoEdit;
+import SpringBoot.TP.Entity.Producto;
 import SpringBoot.TP.Service.CategoriaService;
+import SpringBoot.TP.Service.ProductoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,31 +21,31 @@ import java.util.List;
 @RequestMapping("/producto")
 @RequiredArgsConstructor
 public class ProductoController {
-    private final CategoriaService categoriaService;
+    private final ProductoService productoService;
 
     @PostMapping
-    public ResponseEntity<CategoriaDTO> save(@RequestBody CategoriaCreate categoriaCreate){
-        return ResponseEntity.status(HttpStatus.CREATED).body(categoriaService.save(categoriaCreate));
+    public ResponseEntity<ProductoDTO> save(@RequestBody ProductoCreate productoCreate) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(productoService.save(productoCreate));
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CategoriaDTO> findById(@PathVariable Long id){
-        return ResponseEntity.ok(categoriaService.findById(id));
+    public ResponseEntity<ProductoDTO> findById(@PathVariable Long id){
+        return ResponseEntity.ok(productoService.findById(id));
     }
 
     @GetMapping
-    public ResponseEntity<List<CategoriaDTO>> findAll(){
-        return ResponseEntity.ok(categoriaService.findAll());
+    public ResponseEntity<List<ProductoDTO>> findAll(){
+        return ResponseEntity.ok(productoService.findAll());
     }
 
     @PutMapping
-    public ResponseEntity<CategoriaDTO> update(@RequestBody CategoriaEdit categoriaEdit, @PathVariable Long id){
-        return ResponseEntity.ok(categoriaService.update(categoriaEdit, id));
+    public ResponseEntity<ProductoDTO> update(@RequestBody ProductoEdit productoEdit, @PathVariable Long id){
+        return ResponseEntity.ok(productoService.update(productoEdit, id));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<CategoriaDTO> delete(@PathVariable Long id){
-        categoriaService.deleteById(id);
+    public ResponseEntity<ProductoDTO> delete(@PathVariable Long id){
+        productoService.delete(id);
         return ResponseEntity.noContent().build();
     }
 }
