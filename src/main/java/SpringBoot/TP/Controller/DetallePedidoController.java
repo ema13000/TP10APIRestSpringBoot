@@ -23,7 +23,7 @@ public class DetallePedidoController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<DetallePedidoDTO> findById(@PathVariable Long id) {
+    public ResponseEntity<DetallePedidoDTO> findById(@PathVariable("id") Long id) {
         return ResponseEntity.ok(detallePedidoService.findById(id));
     }
 
@@ -33,7 +33,7 @@ public class DetallePedidoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<DetallePedidoDTO> delete(@PathVariable Long id) {
+    public ResponseEntity<DetallePedidoDTO> delete(@PathVariable("id") Long id) {
         detallePedidoService.deleteById(id);
         return ResponseEntity.noContent().build();
     }

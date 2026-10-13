@@ -25,7 +25,7 @@ public class PedidoController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<PedidoDTO> findById(@PathVariable Long id){
+    public ResponseEntity<PedidoDTO> findById(@PathVariable("id") Long id){
         return ResponseEntity.ok(pedidoService.findById(id));
     }
 
@@ -35,12 +35,12 @@ public class PedidoController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<PedidoDTO> update(@RequestBody PedidoEdit pedidoEdit, @PathVariable Long id){
+    public ResponseEntity<PedidoDTO> update(@RequestBody PedidoEdit pedidoEdit, @PathVariable("id") Long id){
         return ResponseEntity.ok(pedidoService.update(pedidoEdit, id));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<PedidoDTO> delete(@PathVariable Long id){
+    public ResponseEntity<PedidoDTO> delete(@PathVariable("id") Long id){
         pedidoService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
