@@ -1,9 +1,11 @@
 package SpringBoot.TP.Controller;
 
+import SpringBoot.TP.DTO.pedido.PedidoCreate;
 import SpringBoot.TP.DTO.pedido.PedidoDTO;
 import SpringBoot.TP.DTO.pedido.PedidoEdit;
 import SpringBoot.TP.Service.PedidoService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +18,11 @@ import java.util.List;
 public class PedidoController {
 
     private final PedidoService pedidoService;
+
+    @PostMapping
+    public ResponseEntity<PedidoDTO> save(@RequestBody PedidoCreate pedidoCreate) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(pedidoService.save(pedidoCreate));
+    }
 
     @GetMapping("/{id}")
     public ResponseEntity<PedidoDTO> findById(@PathVariable Long id){
