@@ -46,6 +46,6 @@ public class UsuarioController {
 
     @GetMapping("/email")
     public ResponseEntity<UsuarioDTO> findByEmail(@RequestParam("email") String email){
-        return ResponseEntity.ok(usuarioService.find)
+        return ResponseEntity.ok(usuarioService.findByMail(email));
     }
 }
