@@ -26,7 +26,7 @@ public class ProductoServiceImpl implements ProductoService {
 
     @Override
     public ProductoDTO save(ProductoCreate productoCreate) {
-        Categoria categoria = categoriaRepository.findById(productoCreate.idCategoria()).orElseThrow(()-> new NullPointerException("No se encontro la categoria"));
+        Categoria categoria = categoriaRepository.findById(productoCreate.idCategoria()).orElseThrow(()-> new RecursoNoEncontradoException("No se encontro la categoria"));
         Producto producto = productoCreate.toEntity(categoria);
         producto = productoRepository.save(producto);
         return ProductoDTO.toDTO(producto);
@@ -34,7 +34,7 @@ public class ProductoServiceImpl implements ProductoService {
 
     @Override
     public ProductoDTO findById(Long id) {
-        Producto producto = productoRepository.findById(id).orElseThrow(() -> new NullPointerException("No se encontro el producto"));
+        Producto producto = productoRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("No se encontro el producto"));
         if (producto.getEliminado() == false) {
             return ProductoDTO.toDTO(producto);
         }

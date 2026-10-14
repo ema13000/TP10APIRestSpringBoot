@@ -68,7 +68,7 @@ public class PedidoServiceImpl implements PedidoService {
 
     @Override
     public void deleteById(Long id) {
-        Pedido pedido = pedidoRepository.findById(id).orElseThrow(() -> new NullPointerException("No se encontro el pedido buscado"));
+        Pedido pedido = pedidoRepository.findById(id).orElseThrow(() -> new RecursoNoEncontradoException("No se encontro el pedido buscado"));
         pedido.setEliminado(true);
         pedidoRepository.save(pedido);
     }

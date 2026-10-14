@@ -1,17 +1,17 @@
 package SpringBoot.TP.DTO.detallePedido;
 
 import SpringBoot.TP.Entity.DetallePedido;
-import SpringBoot.TP.Entity.Pedido;
+import SpringBoot.TP.Entity.Producto;
 
 public record DetallePedidoCreate(
         Long idProducto,
-        int cantidad,
-        Double subtotal
+        int cantidad
 ) {
-    public DetallePedido toEntity() {
-        return DetallePedido.builder().
-                cantidad(cantidad).
-                subtotal(subtotal).
-                build();
+    public DetallePedido toEntity(Producto producto) {
+        return DetallePedido.builder()
+                .cantidad(cantidad)
+                .producto(producto)
+                .subtotal(cantidad * producto.getPrecio())
+                .build();
     }
 }
